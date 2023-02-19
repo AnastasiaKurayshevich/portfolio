@@ -1,0 +1,86 @@
+:root {
+  --background-color: #7ccddd;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+ 
+}
+#background {
+  width: 600px; 
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:  5px solid #21889d; 
+  background-color: var(--background-color); 
+  margin: 80px auto;
+  border-radius: 8%;
+  
+}
+
+.grid {
+  max-width: 550px;
+  margin: 120px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #21889d;
+}
+
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 75px;
+  width: 75px;
+  border-radius: 5%;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  background: #e55926 no-repeat center center / contain;
+}
+.front:hover {
+  background: #e54106 no-repeat center center / contain;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: var(--background-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background: var(--background-color) !important;
+}

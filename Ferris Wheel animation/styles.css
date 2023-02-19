@@ -1,0 +1,140 @@
+.wheel {
+    border: 4px solid #BB1B51;
+    border-radius: 50%;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px;
+    width: 100%;
+    height: 40vw;
+    width: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+  
+  }
+  
+  .line {
+    background-color: #720026;
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+  }
+  
+  .line:nth-of-type(2) {
+    transform: rotate(60deg);
+  }
+  .line:nth-of-type(3) {
+    transform: rotate(120deg);
+  }
+  .line:nth-of-type(4) {
+    transform: rotate(180deg);
+  }
+  .line:nth-of-type(5) {
+    transform: rotate(240deg);
+  }
+  .line:nth-of-type(6) {
+    transform: rotate(300deg);
+  }
+  
+  .cabin {
+    background-color: #CE4257;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    transform-origin: 50% 0%;
+    border-radius: 30%;
+    
+    
+  }
+  
+  .cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+    background-image: url("images/dinosaur.png"); 
+    background-size: cover;
+  }
+  .cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+    background-image: url("images/bird.png"); 
+    background-size: cover;
+  }
+  .cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+    background-image: url("images/flamingo.png"); 
+    background-size: cover;
+  }
+  .cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+    background-image: url("images/unicorn.png"); 
+    background-size: cover;
+  }
+  .cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+    background-image: url("images/alien.png"); 
+    background-size: cover;
+  }
+  .cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+    background-image: url("images/cat.png"); 
+    background-size: cover;
+  }
+  .wheel:hover {
+    animation-play-state:running;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+  }
+  .wheel:hover > .cabin{
+    animation-play-state:running;
+    animation: cabins 10s ease-in-out infinite;
+  }
+  h2 {
+    display: inline-block;
+    text-align: center;
+    margin-top: 550px;
+    width: 100%;
+    color: #BB1B51;
+    position: relative;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+ 
+  
+  @keyframes wheel {
+     0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+  }
+  @keyframes cabins {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      background-color: #FFD154;
+    }
+    50% {
+      background-color: #FF7F51;
+    }
+    75% {
+      background-color: #FFD154;
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }

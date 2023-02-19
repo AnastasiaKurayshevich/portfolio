@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <h1 id="title">Survey Form</h1>
+   <p id="description">Thank you for sharing your opinion with us</p>
+   <form id="survey-form">
+   <fieldset>
+   <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" required/></label>
+   <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your email address" required /></label>
+   <label id="number-label" for="number">Number<input id="number" type="number" placeholder="enter your telephone number" /></label>
+   </fieldset>
+   <fieldset>
+   <label for="dropdown">How often do you use our services?
+    <select id="dropdown">
+     <option value="0">(select an option)</option>
+     <option value="1">Every day</option>
+     <option value="2">Few time a week</option>
+     <option value="3">Once a week</option>
+     <option value="4">Once a few week</option>
+     <option value="5">Once a month</option>
+     <option value="6">Less than once a month</option>
+    </select>
+    </fieldset>
+    <fieldset>
+   <label">Would you recommend our services?</label>
+     <label for="definitely"><input id="definitely" type="radio" name="recommend" class="radio" value="1" />Definitely</label>
+     <label for="maybe"><input id="maybe" type="radio" name="recommend" class="radio" value="2" />Maybe</label>
+     <label for="no"><input id="no" type="radio" name="recommend" class="radio" value="3" />No</label>
+    </label>
+   </label>
+   </fieldset>
+   <fieldset>
+   <label>What would you like to improve?</label>
+    <label for="connection"><input id="connection" type="checkbox" value="1" class="check" />Connection quality</label>
+    <label for="lower"><input id="lower" type="checkbox" value="2" class="check" />Lower the prices</label>
+    <label for="service"><input id="service" type="checkbox" value="3" class="check" />Customer Service</label>
+    <label for="design"><input id="design" type="checkbox" value="4" class="check" />Our design</label>
+   </label>
+   </fieldset>
+   <fieldset>
+   <label for="comments">Leave us a comment
+    <textarea id="comments" rows="4" cols="30" placeholder="Write your feedback here... " ></textarea>
+   </label>
+   <input id="submit" type="submit" value="Sumbit" />
+   </fieldset>
+   </form>
+  </body>

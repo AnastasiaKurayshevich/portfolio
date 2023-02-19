@@ -1,0 +1,215 @@
+
+:root {
+    --main-black: #1e1e24;
+    --main-coral: #fb9f89;
+    --main-almond: #e4d8db;
+    --main-cambrige: #81ae9d;
+    --main-green: #21A179;
+}
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--main-almond);
+}
+header {
+  top: 0;
+  min-height: 50px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--main-cambrige);
+  width: 100%;
+}
+  
+
+header #nav-bar ul {
+    list-style: none;
+    padding: 5px;
+}
+header #nav-bar ul li {
+    display: inline-block;
+}
+header #nav-bar ul li a {
+    color: white; 
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+header #nav-bar ul li a:hover {
+    background: var(--main-coral);
+    border-radius: 3px;
+    transition: 0Js ease all;
+    color: var(--main-black);
+}
+.logo {
+    display: block;
+
+}
+.logo img {
+    width: 70px;
+    border-radius: 50%;
+    display: block;
+    margin: 30px auto 10px;
+
+}
+.logo h2 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--main-black);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 50px;
+}
+.divider{
+    border-top: 3px solid var(--main-green);
+    width: 30%;
+    margin: 25px auto;
+}
+#form {
+    margin: 50px auto 0;
+}
+
+form h4{ 
+    text-align: center;
+    font-size: 20px;
+    color: var(--main-black);
+}
+
+form input {
+    display: block;
+    margin: 10px auto;
+}
+#email {
+  width: 200px;
+  height: 20px;
+}
+#submit {
+  width: 100px;
+  height: 35px;
+  background-color: var(--main-coral);
+  color: var(--main-black);
+  border: 2px solid var(--main-black);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+h3 {
+    text-align: center;
+    margin: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: var(--main-black);
+}
+#how-it-works p, #about p {
+    width: 65%;
+    font-size: 18px;
+    color: var(--main-black);
+    margin: auto;
+    text-align: center;
+}
+#how-it-works iframe {
+    display: block;
+    margin: 20px auto;
+}
+#prices-h3 {
+    margin-top: 60px;
+    margin-bottom: -20px;
+}
+#prices {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.workshop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 15px;
+    border: 2px solid var(--main-green);
+    border-radius: 5px;
+}
+#prices h4 {
+    display: block;
+    background-color: var(--main-green);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+
+}
+#prices p {
+    margin: 10px;
+    color: var(--main-black);
+    font-weight: 700;
+    font-size: 18px;
+}
+#prices ul {
+    margin: 10px;
+    width: 80%;
+    
+}
+#prices li {
+    color: var(--main-black);
+    font-weight: 500;
+    font-size: 16px;
+    list-style-type: circle; 
+    text-align: left;
+    padding: 5px;
+    
+    
+}
+#prices h6 {
+    padding: 10px; 
+    font-size: 17px; 
+    color: var(--main-black);
+}
+.btn {
+    width: 80px;
+    height: 30px;
+    background-color: var(--main-coral);
+    border: 2px solid var(--main-black);
+    color: var(--main-black);
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}   
+
+.btn:hover {
+    background-color: #81ae9d;
+    border: 2px solid var(--main-green);
+    color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--main-cambrige);
+    margin-top: 40px;
+    padding: 20px;
+}
+footer p {
+    color: var(--main-almond);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    padding-top: 0;
+}
+
+@media (max-width: 400){
+    #header{
+        flex-wrap: wrap;
+    }
+}
